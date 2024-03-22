@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Motivos de rechazo</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Seleccione los motivos de rechazo</h3>
+  <div>
+    <mat-form-field appearance="fill" [style.width.px]="600" >
+        <mat-label>Por favor indique el motivo del rechazo</mat-label>
+        <mat-select required [(ngModel)]="objDatos">
+          <mat-option *ngFor="let motivo of this.srvSAp.motivosLis" [value]="motivo" >{{motivo.motivo}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close class="buttonBlue" >Cerrar</button> 
+  <button mat-button  (click)="aceptar_clic()" class="buttonRed">Aceptar</button>
+  
+</mat-dialog-actions>

@@ -1,0 +1,15 @@
+.dlg_DatosContrato{
+    width: 700px;
+}
+.dlg_DatosContrato h3{
+    width: 100%;
+    text-align: left;
+    
+}
+h2 {
+    width: 700px;
+    text-align: left;
+}
+input, textarea {
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+table{
+    width: 100%;
+    margin-top: 50px;
+}
+
+th{
+    text-align: center;
+    font: normal normal bold 12px/12px Raleway;
+    letter-spacing: 0.24px;
+    color: #616161;
+    opacity: 1;
+
+}
+td{
+    text-align: left;
+    font: normal normal medium 12px/14px Raleway;
+    letter-spacing: 0.24px;
+    color: #343433;
+    opacity: 1;
+    margin: 10px ;
+}
+.textoInfo {
+    margin-top: 50px;
+    padding: 25px;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+}
+p {
+    font: var(--unnamed-font-style-normal) normal 600 var(--unnamed-font-size-14)/18px var(--unnamed-font-family-raleway);
+letter-spacing: var(--unnamed-character-spacing-0-28);
+color: var(--negro-ccb-000000);
+text-align: left;
+font: normal normal 600 14px/18px Raleway;
+letter-spacing: 0.28px;
+color: #000000;
+opacity: 1;
+}

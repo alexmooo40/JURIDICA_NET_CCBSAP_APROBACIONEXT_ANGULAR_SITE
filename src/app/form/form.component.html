@@ -1,0 +1,30 @@
+<Body id="home" >
+        <div class="conteiner-body">
+        <div class="row-body">
+        <div class="title-num">
+        <p>Solicitud pedido numero # {{this.obtenerSolped()}}</p>
+        <app-formulario></app-formulario>
+      
+        </div>
+        <div class="btn_cont"  >
+                <button mat-button class="buttonBlue"  (click)="rechazar_clic()">Rechazar</button>
+                <button mat-button class="buttonRed"  (click)="aprobar_clic()">Aprobar</button>
+             
+        </div>
+       
+        </div>
+        </div>
+        
+       
+<div class="overlay" *ngIf="this.srvSAp.getStateProcess()">
+        <div class="centerover">
+          <div style="text-align:center" class="loadingloc">
+            <p>Por favor espere...</p>
+            <mat-progress-spinner value="10" mode="indeterminate"  diameter="40" ></mat-progress-spinner>       
+          
+          </div>
+        </div>
+      </div>
+      
+        
+</Body>

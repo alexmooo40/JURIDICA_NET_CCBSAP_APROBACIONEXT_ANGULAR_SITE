@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Información del contrato</h2>
+<mat-dialog-content class="dlg_DatosContrato">
+  <h3>Datos del contrato</h3>
+  <div>
+    <mat-form-field appearance="fill" [style.width.px]="600">
+        <mat-label>Proveedor</mat-label>
+        <input matInput name="proveedor" placeholder="Proveedor" [(ngModel)]="Infocontrato.Proveedor" readonly="readonly">
+      </mat-form-field>
+      <br />
+      <mat-form-field  [style.width.px]="600">
+        <mat-label>Objeto</mat-label>
+        <textarea matInput
+                  cdkTextareaAutosize
+                  #autosize="cdkTextareaAutosize"
+                  cdkAutosizeMinRows="2"
+                  cdkAutosizeMaxRows="5" name="objeto" placeholder="Objeto del contrato" [(ngModel)]="Infocontrato.Objeto" readonly="readonly"></textarea>
+      </mat-form-field>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close class="buttonRed">Cerrar</button> 
+</mat-dialog-actions>

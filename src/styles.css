@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{margin: 0 AUTO;
+    padding: 0 AUTO;
+}
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    display: inline-flex;
+}
+
+
+.conteiner{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 1131px;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0%;
+}
+.login {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 80%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+    .login:focus {
+      background-color: #fff;
+      border-bottom: 2px solid #cd113c; /*Cambiar*/
+    }
+  
+    .login:placeholder {
+      color: #cccccc;
+    }
+    .btn_cont{
+        width: 100%;
+        padding: 25px;
+        text-align: right !important;
+    
+    }
+    .btn_cont button{
+        margin-right: 10px !important;
+        
+    }
+    .buttonRed{
+        padding: 25px !important;
+        margin: 20px;
+        opacity: 1;
+        background: #DD0034 0% 0% no-repeat padding-box !important;
+border-radius: 4px;
+opacity: 1;
+}
+.buttonBlue{
+    padding: 25px !important;
+    margin: 20px;
+    border: 1px solid #2376A0 !important;
+    border-radius: 4px;
+    opacity: 1;
+    background-color: #FFFFFF!important;
+    color: #2376A0 !important;
+}
+.buttonRed .mdc-button__label{
+    text-align: left;
+    font: normal normal bold 16px/14px Raleway;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+
+}
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.286);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  
+.centerover {
+    background-color: white;
+    height:80px;
+    width:200px;
+   float:left;
+    position: absolute;
+    padding:10px;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .loadingloc p{
+    float:left
+}
+.loadingloc mat-progress-spinner {
+  float: right
+}

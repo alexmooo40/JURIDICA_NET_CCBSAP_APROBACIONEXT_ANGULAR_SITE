@@ -1,0 +1,21 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="../assets/images/logo_CCB.png" id="icon-login" alt="User Icon">
+    </div>
+
+    <!-- Login Form -->
+    <form (ngSubmit)="onLogin()">
+      <input type="number" id="login"  [(ngModel)]="user.Username"  class="fadeIn second login"  name="login" placeholder="Usuario">
+      <input type="password" type="password" [(ngModel)]="user.Password"  id="password" class="fadeIn third login"  name="login" placeholder="password">
+      <button class="login"  >Ingresar</button><br />
+      <span class="error">{{mensaje}}</span>
+      
+    </form>
+    
+   
+  </div>
+</div>
+
